@@ -1,3 +1,8 @@
 {
-    "genericError": "Scuze, a fost o eroare. Te rog incearca mai tarziu."
+  "header": {
+    "home-tab": "Acasa",
+    "current-number-tab": "Numarul curent",
+    "archive-tab": "Arhiva",
+    "subscription-tab": "Abonare"
+  }
 }

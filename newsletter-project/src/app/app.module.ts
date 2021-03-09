@@ -15,11 +15,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
-//todo: move to shared module
-import { NzButtonModule } from 'ng-zorro-antd/button';
-import { HomepageComponent } from './features/homepage/homepage/homepage.component';
-
-
 
 registerLocaleData(en);
 
@@ -36,7 +31,6 @@ registerLocaleData(en);
 
     SharedModule,
 
-    NzButtonModule,
    
      // ngx-translate and the loader module
      HttpClientModule,
