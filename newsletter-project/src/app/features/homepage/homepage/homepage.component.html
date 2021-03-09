@@ -1,1 +1,8 @@
-<p>homepage works!</p>
+<div class="container">
+    <img src="../../../../assets/images/mainbottomBg.jpg">
+    <div class="container-fluid">
+        <span *ngFor="let item of itemsList">
+            <app-item [item]="item"></app-item>
+        </span>
+    </div>
+  </div>

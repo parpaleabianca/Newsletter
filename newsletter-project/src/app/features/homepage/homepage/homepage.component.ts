@@ -6,10 +6,37 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./homepage.component.scss']
 })
 export class HomepageComponent implements OnInit {
+  itemsList:Array<any>=[];         //todo: create model
 
   constructor() { }
 
   ngOnInit(): void {
+    this.getDummyItems();
+  }
+
+  getDummyItems(){
+    this.itemsList=[
+      {
+        icon:"question-circle",
+        number:284,
+        text:"lalalalla"
+      },
+      {
+        icon:"question-circle",
+        number:58,
+        text:"lalalalla"
+      },
+      {
+        icon:"question-circle",
+        number:1352,
+        text:"lalalalla"
+      },
+      {
+        icon:"question-circle",
+        number:7321,
+        text:"lalalalla"
+      },
+    ]
   }
 
 }
