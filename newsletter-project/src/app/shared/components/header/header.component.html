@@ -1,63 +1,74 @@
-<ul class="menu" nz-menu nzMode="horizontal">
-  <li nz-menu-item nzSelected>
-    {{"header.home-tab" | translate}}
-  </li>
-  <li nz-menu-item>
-    {{"header.current-number-tab" | translate}}
-  </li>
-  <li nz-menu-item>
-    {{"header.archive-tab" | translate}}
-  </li>
-  <li nz-menu-item>
-    {{"header.subscription-tab" | translate}}
-  </li>
+<div class="header">
+  <ul nz-menu nzMode="horizontal">
 
-  <div id="search" *ngIf="isSearchVisible">
-    <nz-input-group
-      nzSearch
-      [nzSuffix]="suffixCleanButton"
-      [nzPrefix]="prefixIcon"
-    >
-      <input
-        nz-input
-        id="input-search"
-        [(ngModel)]="searchInput"
-        type="text"
-        placeholder="Please fill out this field."
-        (keydown.enter)="search()"
-      />
-    </nz-input-group>
-  </div>
-  <div >
-    <i
-    *ngIf="!isSearchVisible"
-      id="search-icon"
-      nz-icon
-      nzType="search"
-      (click)="isSearchVisible = !isSearchVisible"
-    ></i>
-    <i
-    *ngIf="isSearchVisible"
-      id="search-icon"
-      nz-icon
-      nzType="close"
-      (click)="isSearchVisible = !isSearchVisible"
-    ></i>
-  </div>
+    <li>
+      <img id="unitbv-img" src="../../../../assets/images/unitbv.png" />
+    </li>
 
-</ul>
+    <li>
+      <!-- <img id="unitbv-img" src="../../../../assets/images/favicon.ico" /> -->
+      <span id="title">Newsletter</span>
+    </li>
 
+    <div class="menu">
+      <li nz-menu-item nzSelected>
+        {{ "header.home-tab" | translate }}
+      </li>
+      <li nz-menu-item>
+        {{ "header.current-number-tab" | translate }}
+      </li>
+      <li nz-menu-item>
+        {{ "header.archive-tab" | translate }}
+      </li>
+      <li nz-menu-item>
+        {{ "header.subscription-tab" | translate }}
+      </li>
 
+      <div id="search" *ngIf="isSearchVisible">
+        <nz-input-group
+          nzSearch
+          [nzSuffix]="suffixCleanButton"
+          [nzPrefix]="prefixIcon"
+        >
+          <input
+            nz-input
+            id="input-search"
+            [(ngModel)]="searchInput"
+            type="text"
+            placeholder="Please fill out this field."
+            (keydown.enter)="search()"
+          />
+        </nz-input-group>
+      </div>
+      <div class="icons">
+        <i
+          *ngIf="!isSearchVisible"
+          class="search-icon"
+          nz-icon
+          nzType="search"
+          (click)="isSearchVisible = !isSearchVisible"
+        ></i>
+        <i
+          *ngIf="isSearchVisible"
+          class="search-icon"
+          nz-icon
+          nzType="close"
+          (click)="isSearchVisible = !isSearchVisible"
+        ></i>
+      </div>
+    </div>
+  </ul>
 
   <ng-template #prefixIcon><i nz-icon nzType="search"></i></ng-template>
 
-<ng-template #suffixCleanButton>
-  <i
-    nz-icon
-    nzType="close"
-    nzTheme="outline"
-    *ngIf="searchInput"
-    (click)="cleanSearchInput()"
-    id="clean-btn"
-  ></i>
-</ng-template>
+  <ng-template #suffixCleanButton>
+    <i
+      nz-icon
+      nzType="close"
+      nzTheme="outline"
+      *ngIf="searchInput"
+      (click)="cleanSearchInput()"
+      id="clean-btn"
+    ></i>
+  </ng-template>
+</div>
