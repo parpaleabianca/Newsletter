@@ -1,0 +1,19 @@
+.footer {
+  height: 10rem;
+  display: flex;
+
+  .logo {
+    margin: auto -7rem auto 7rem;
+    img{
+        margin-right: 0.5rem;
+    }
+  }
+
+  .icons {
+    margin: auto;
+    i {
+      margin: 0 1rem;
+      font-size: 20px;
+    }
+  }
+}

@@ -14,6 +14,7 @@ import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzInputModule } from 'ng-zorro-antd/input';
 import { FormsModule } from '@angular/forms';
+import { NzToolTipModule } from 'ng-zorro-antd/tooltip';
 
 
 
@@ -29,6 +30,7 @@ import { FormsModule } from '@angular/forms';
     NzMenuModule,
     NzIconModule,
     NzInputModule,
+    NzToolTipModule,
   ],
   exports:[
     //components
@@ -40,6 +42,7 @@ import { FormsModule } from '@angular/forms';
     NzMenuModule,
     NzIconModule,
     NzInputModule,
+    NzToolTipModule,
 
     //others
     TranslateModule,
