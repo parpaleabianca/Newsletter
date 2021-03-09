@@ -2,16 +2,20 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [HeaderComponent, FooterComponent],
   imports: [
     CommonModule,
 
     NzButtonModule,
   ],
   exports:[
-    NzButtonModule
+    NzButtonModule,
+    HeaderComponent,
+    FooterComponent
   ]
 })
 export class SharedModule { }

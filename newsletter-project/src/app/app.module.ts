@@ -1,3 +1,4 @@
+import { SharedModule } from './shared/shared.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -16,6 +17,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 //todo: move to shared module
 import { NzButtonModule } from 'ng-zorro-antd/button';
+import { HomepageComponent } from './features/homepage/homepage/homepage.component';
 
 
 
@@ -31,6 +33,8 @@ registerLocaleData(en);
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
+
+    SharedModule,
 
     NzButtonModule,
    
