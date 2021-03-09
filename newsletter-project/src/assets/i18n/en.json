@@ -1,3 +1,8 @@
 {
-    "genericError": "Sorry, there was an error. Please try again later."
+  "header": {
+    "home-tab": "Home",
+    "current-number-tab": "Current number",
+    "archive-tab": "Archive",
+    "subscription-tab": "Subscription"
+  }
 }
