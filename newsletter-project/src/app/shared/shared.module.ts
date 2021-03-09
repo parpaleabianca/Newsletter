@@ -42,7 +42,8 @@ import { FormsModule } from '@angular/forms';
     NzInputModule,
 
     //others
-    TranslateModule
+    TranslateModule,
+    CommonModule,
   ]
 })
 export class SharedModule { }
