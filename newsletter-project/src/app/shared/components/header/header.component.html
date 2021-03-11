@@ -35,7 +35,7 @@
             id="input-search"
             [(ngModel)]="searchInput"
             type="text"
-            placeholder="Please fill out this field."
+            placeholder="{{'header.search-placeholder' | translate }}"
             (keydown.enter)="search()"
           />
         </nz-input-group>
