@@ -51,4 +51,15 @@
       nz-tooltip
     ></i>
   </div>
+
+  <div class="translate-btns">
+    <nz-radio-group
+      [(ngModel)]="selectedLanguage"
+      (ngModelChange)="onLanguageChangeEvent()"
+      nzButtonStyle="solid"
+    >
+      <label nz-radio-button nzValue="ro">Ro</label>
+      <label nz-radio-button nzValue="en">En</label>
+    </nz-radio-group>
+  </div>
 </div>

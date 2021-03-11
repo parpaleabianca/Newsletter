@@ -14,7 +14,7 @@ export class ItemComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges(){
-    console.log(this.item)
+    // console.log(this.item)
   }
 
 }
