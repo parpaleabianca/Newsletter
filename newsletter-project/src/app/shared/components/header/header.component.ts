@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -9,7 +10,7 @@ export class HeaderComponent {
   searchInput:string="";
   isSearchVisible: boolean = false;
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   cleanSearchInput(){
     console.log("clear")
@@ -18,4 +19,10 @@ export class HeaderComponent {
   search(){
     console.log("search")
   }
+
+  checkUrl(selectedRoute:string):boolean{
+    return this.router.url.includes(selectedRoute)
+  }
+
+
 }
