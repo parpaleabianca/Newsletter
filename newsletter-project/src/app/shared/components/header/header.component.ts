@@ -21,10 +21,7 @@ export class HeaderComponent {
   }
 
   checkUrl(selectedRoute:string):boolean{
-    if (this.router.url.includes(selectedRoute)) {
-      return true;
-    }
-    return false;
+    return this.router.url.includes(selectedRoute)
   }
 
 

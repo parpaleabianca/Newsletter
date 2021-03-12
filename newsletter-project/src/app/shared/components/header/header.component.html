@@ -17,11 +17,11 @@
       <li nz-menu-item [nzSelected]="checkUrl('current-number')" >
         <a href="/current-number">{{ "header.current-number-tab" | translate }}</a>
       </li>
-      <li nz-menu-item [nzSelected]="checkUrl('2')" >
-        <a href="https://ng.ant.design"> {{ "header.archive-tab" | translate }}</a>
+      <li nz-menu-item [nzSelected]="checkUrl('archive')" >
+        <a href="/archive"> {{ "header.archive-tab" | translate }}</a>
       </li>
       <li nz-menu-item [nzSelected]="checkUrl('1')">
-        <a href="https://ng.ant.design">{{ "header.subscription-tab" | translate }}</a>
+        <a href="/">{{ "header.subscription-tab" | translate }}</a>
       </li>
 
       <div id="search" *ngIf="isSearchVisible">
