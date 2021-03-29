@@ -1,0 +1,9 @@
+{
+  "header": {
+    "home-tab": "Home",
+    "current-number-tab": "Current number",
+    "archive-tab": "Archive",
+    "subscription-tab": "Subscription",
+    "search-placeholder":"Please fill out this field."
+  }
+}
