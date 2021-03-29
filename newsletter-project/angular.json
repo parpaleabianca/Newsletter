@@ -133,5 +133,5 @@
       }
     }
   },
-  "defaultProject": "dist/newsletter-project"
+  "defaultProject": "newsletter-project"
 }
