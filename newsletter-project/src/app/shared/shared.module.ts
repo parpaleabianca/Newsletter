@@ -6,18 +6,17 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 
 //others
-import { TranslateModule } from "@ngx-translate/core";
+import { TranslateModule } from '@ngx-translate/core';
 
 //ng-zorro
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzInputModule } from 'ng-zorro-antd/input';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NzToolTipModule } from 'ng-zorro-antd/tooltip';
 import { NzRadioModule } from 'ng-zorro-antd/radio';
-
-
+import { NzSelectModule } from 'ng-zorro-antd/select';
 
 @NgModule({
   declarations: [HeaderComponent, FooterComponent],
@@ -25,6 +24,7 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
     CommonModule,
     TranslateModule,
     FormsModule,
+    ReactiveFormsModule,
 
     //ng-zorro
     NzButtonModule,
@@ -33,8 +33,9 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
     NzInputModule,
     NzToolTipModule,
     NzRadioModule,
+    NzSelectModule,
   ],
-  exports:[
+  exports: [
     //components
     HeaderComponent,
     FooterComponent,
@@ -46,10 +47,13 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
     NzInputModule,
     NzToolTipModule,
     NzRadioModule,
+    NzSelectModule,
 
     //others
     TranslateModule,
     CommonModule,
-  ]
+    FormsModule,
+    ReactiveFormsModule,
+  ],
 })
-export class SharedModule { }
+export class SharedModule {}

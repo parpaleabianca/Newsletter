@@ -1,0 +1,25 @@
+<div class="content">
+  <div class="top">
+    <h1>
+      <i nz-icon nzType="read" nzTheme="outline"></i
+      >{{ "header.archive-tab" | translate }}
+    </h1>
+
+    <div class="select-year">
+      <label>{{ "archive.show-from-year" | translate }}</label>
+      <nz-select [(ngModel)]="selectedYear" (ngModelChange)="changedYear()">
+        <nz-option
+          *ngFor="let option of yearsList"
+          [nzValue]="option"
+          [nzLabel]="option"
+        ></nz-option>
+      </nz-select>
+    </div>
+  </div>
+
+  <div *ngIf="newsletterArchive.length > 0">
+    <div class="archive-item" *ngFor="let item of newsletterArchive">
+      <app-news-item [item]="item"> </app-news-item>
+    </div>
+  </div>
+</div>
