@@ -2,8 +2,14 @@
   "header": {
     "home-tab": "Acasa",
     "current-number-tab": "Numarul curent",
-    "archive-tab": "Arhiva",
+    "archive-tab": "Arhivă",
     "subscription-tab": "Abonare",
     "search-placeholder":"Te rog, scrie ceva aici."
+  },
+
+  "archive":{
+    "featured":"Prezentat în acest număr:",
+    "more":"Vezi mai mult ...",
+    "show-from-year":"Afiseaza din anul:"
   }
 }

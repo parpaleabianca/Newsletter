@@ -10,6 +10,10 @@ const routes: Routes = [
   {
     path: 'current-number',
     loadChildren: () => import('./features/current-number/current-number.module').then(m => m.CurrentNumberModule)
+  },
+  {
+    path: 'archive',
+    loadChildren: () => import('./features/archive/archive.module').then(m => m.ArchiveModule)
   }
 ];
 
